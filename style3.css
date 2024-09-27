@@ -1,0 +1,181 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: scroll;
+  }
+  
+  .cube {
+    position: absolute;
+  }
+  
+  .face {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .fade .top {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  .fade .left {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  .fade .right {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  
+  .hide .top {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  .hide .left {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  .hide .right {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  .top {
+    transform: rotate(210deg) skew(-30deg) scaleY(0.864) translate(0, 0);
+  }
+  
+  .left {
+    transform: rotate(30deg) skew(30deg) scaleY(0.864) translate(-15px, 0);
+  }
+  
+  .shadeL {
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+  }
+  
+  .right {
+    transform: rotate(-30deg) skew(-30deg) scaleY(0.864) translate(15px, -30px);
+  }
+  
+  .shadeR {
+    -webkit-filter: brightness(125%);
+    filter: brightness(125%);
+  }
+  
+  .grass .top {
+    background: url("https://t7.rbxcdn.com/48be183b4e905bb92e1fdd14161f32b9");
+    background-size: 100% 100%;
+  }
+  .grass .left {
+    background: url(https://t4.rbxcdn.com/8fd032b78fe5c1dcc3dd50b1c3aad34c);
+    background-size: 100% 100%;
+  }
+  .grass .right {
+    background: url(https://t4.rbxcdn.com/8fd032b78fe5c1dcc3dd50b1c3aad34c);
+    background-size: 100% 100%;
+  }
+  
+  .stone .top {
+    background: url(http://ih0.redbubble.net/image.33213025.7469/flat,800x800,070,f.jpg);
+    background-size: 100% 100%;
+  }
+  .stone .left {
+    background: url(http://ih0.redbubble.net/image.33213025.7469/flat,800x800,070,f.jpg);
+    background-size: 100% 100%;
+  }
+  .stone .right {
+    background: url(http://ih0.redbubble.net/image.33213025.7469/flat,800x800,070,f.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .dirt .top {
+    background: url(http://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg);
+    background-size: 100% 100%;
+  }
+  .dirt .left {
+    background: url(http://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg);
+    background-size: 100% 100%;
+  }
+  .dirt .right {
+    background: url(http://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .leaf .top {
+    background: url(https://s-media-cache-ak0.pinimg.com/736x/e0/49/ec/e049ec4fac1dd42603bca9d5664707a6.jpg);
+    background-size: 100% 100%;
+  }
+  .leaf .left {
+    background: url(https://s-media-cache-ak0.pinimg.com/736x/e0/49/ec/e049ec4fac1dd42603bca9d5664707a6.jpg);
+    background-size: 100% 100%;
+  }
+  .leaf .right {
+    background: url(https://s-media-cache-ak0.pinimg.com/736x/e0/49/ec/e049ec4fac1dd42603bca9d5664707a6.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .oak .top {
+    background: url(http://orig06.deviantart.net/f273/f/2016/137/4/7/tokyo_travel_posters_by_mkatberry-da2tr8n.jpg);
+    background-size: 100% 100%;
+  }
+  .oak .left {
+    background: url(https://2.bp.blogspot.com/-WaUWXVriC8o/UGc7FG4dF5I/AAAAAAAAACg/ZHmiZwWh4S8/s1600/OakWoodMinecraft.jpg);
+    background-size: 100% 100%;
+  }
+  .oak .right {
+    background: url(https://2.bp.blogspot.com/-WaUWXVriC8o/UGc7FG4dF5I/AAAAAAAAACg/ZHmiZwWh4S8/s1600/OakWoodMinecraft.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .coal .top {
+    background: url(https://4.bp.blogspot.com/-v31oaKHu9Zk/T6AuLUADnaI/AAAAAAAABOM/KAMT4rDeOhs/s1600/minecraft_coal.jpg);
+    background-size: 100% 100%;
+  }
+  .coal .left {
+    background: url(https://4.bp.blogspot.com/-v31oaKHu9Zk/T6AuLUADnaI/AAAAAAAABOM/KAMT4rDeOhs/s1600/minecraft_coal.jpg);
+    background-size: 100% 100%;
+  }
+  .coal .right {
+    background: url(https://4.bp.blogspot.com/-v31oaKHu9Zk/T6AuLUADnaI/AAAAAAAABOM/KAMT4rDeOhs/s1600/minecraft_coal.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .iron .top {
+    background: url(http://media-mcw.cursecdn.com/thumb/b/b7/Iron_oreTex.png/120px-Iron_oreTex.png);
+    background-size: 100% 100%;
+  }
+  .iron .left {
+    background: url(http://media-mcw.cursecdn.com/thumb/b/b7/Iron_oreTex.png/120px-Iron_oreTex.png);
+    background-size: 100% 100%;
+  }
+  .iron .right {
+    background: url(http://media-mcw.cursecdn.com/thumb/b/b7/Iron_oreTex.png/120px-Iron_oreTex.png);
+    background-size: 100% 100%;
+  }
+  
+  .gold .top {
+    background: url(http://media-mcw.cursecdn.com/thumb/3/32/Gold_oreTex.png/120px-Gold_oreTex.png);
+    background-size: 100% 100%;
+  }
+  .gold .left {
+    background: url(http://media-mcw.cursecdn.com/thumb/3/32/Gold_oreTex.png/120px-Gold_oreTex.png);
+    background-size: 100% 100%;
+  }
+  .gold .right {
+    background: url(http://media-mcw.cursecdn.com/thumb/3/32/Gold_oreTex.png/120px-Gold_oreTex.png);
+    background-size: 100% 100%;
+  }
+  
+  .diamond .top {
+    background: url(https://s-media-cache-ak0.pinimg.com/564x/aa/61/74/aa61746fb69319ebe879abf44865daf6.jpg);
+    background-size: 100% 100%;
+  }
+  .diamond .left {
+    background: url(https://s-media-cache-ak0.pinimg.com/564x/aa/61/74/aa61746fb69319ebe879abf44865daf6.jpg);
+    background-size: 100% 100%;
+  }
+  .diamond .right {
+    background: url(https://s-media-cache-ak0.pinimg.com/564x/aa/61/74/aa61746fb69319ebe879abf44865daf6.jpg);
+    background-size: 100% 100%;
+  }

@@ -1,0 +1,113 @@
+body{
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+}
+
+/**
+
+Map
+
+**/
+
+#map{
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: calc(500px - 5vw);
+  left: calc(100px - 1vw);
+  /*top: calc(50% - 17.5vw);
+  left: calc(50% - 17.5vw);*/
+  transform: rotateX(60deg) rotateZ(45deg);
+  transform-style: preserve-3d;
+}
+
+/**
+
+Cube Structure
+
+**/
+
+.cube{
+  width: 12.5%;
+  height: 12.5%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.face{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.face.right{
+  transform: rotateX(-90deg) translateY(100%);
+  transform-origin: 100% 100%;
+}
+
+.face.left{
+  transform: rotateY(90deg) translateX(100%);
+  transform-origin: 100% 0%;
+}
+
+
+/**
+
+Cube type
+
+**/
+  /* Dirt */
+.cube.dirt .face.top{
+  background-color: rgba(141, 110, 99, 1)
+}
+
+.cube.dirt .face.right{
+  background-color: rgba(109, 76, 65, 1);
+}
+
+.cube.dirt .face.left{
+  background-color: rgba(121, 85, 72, 1);
+}
+
+  /* Grass */
+.cube.grass .face.top{
+  background-color: rgba(102, 187, 106, 1);
+}
+
+.cube.grass .face.right{
+  background-color: rgba(109, 76, 65, 1);
+}
+
+.cube.grass .face.left{
+  background-color: rgba(121, 85, 72, 1);
+}
+
+
+  /* Water */
+.cube.water .face.top{
+  background-color: rgba(38, 165, 181, 1)
+}
+
+.cube.water .face.right{
+  background-color: rgba(8, 145, 162, 1)
+}
+
+.cube.water .face.left{
+  background-color: rgba(38, 165, 181, 1)
+}
+
+
+  /* Stone */
+.cube.stone .face.top{
+  background-color: rgb(99, 99, 99)
+}
+
+.cube.stone .face.right{
+  background-color: rgb(58, 58, 58)
+}
+
+.cube.stone .face.left{
+  background-color: rgb(75, 75, 75)
+}
